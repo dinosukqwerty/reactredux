@@ -22,7 +22,7 @@ export default class App extends Component {
         no_hp: "082"
       },
       {
-        id: 1,
+        id: 3,
         nama: "Udin",
         alamat: "Bogor",
         umur: 22,

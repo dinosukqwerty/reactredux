@@ -7,18 +7,22 @@ import { faInfo, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons'
 const columns = [{
   dataField: 'id',
   text: 'ID', 
+  sort: true,
   headerStyle: () => {
       return { width: "5%" };
   },
 }, {
   dataField: 'nama',
-  text: 'Name'
+  text: 'Name',
+  sort: true
 }, {
   dataField: 'alamat',
-  text: 'Alamat'
+  text: 'Alamat',
+  sort: true
 }, {
     dataField: 'no_hp',
     text: 'No_Hp',
+    sort: true,
     headerStyle: () => {
         return { width: "10%" };
     },
@@ -46,11 +50,16 @@ const columns = [{
 }
 ];
 
+const defaultSorted = [{
+    dataField: 'id',
+    order: 'asc'
+  }];
+
 export const TableComponents = (props) => {
     return (
         <div>
             <Container>
-                <BootstrapTable keyField='id' data={ props.users } columns={ columns } />            
+                <BootstrapTable bootstrap4 keyField='id' data={ props.users } columns={ columns }  defaultSorted={ defaultSorted }/>            
             </Container>
         </div>
     )
