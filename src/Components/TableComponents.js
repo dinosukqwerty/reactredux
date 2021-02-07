@@ -3,7 +3,9 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import { Container, Button } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfo, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons'
+import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
 
+const { SearchBar } = Search;
 const columns = [{
   dataField: 'id',
   text: 'ID', 
@@ -59,7 +61,25 @@ export const TableComponents = (props) => {
     return (
         <div>
             <Container>
-                <BootstrapTable bootstrap4 keyField='id' data={ props.users } columns={ columns }  defaultSorted={ defaultSorted }/>            
+                <ToolkitProvider
+                    bootstrap4 keyField='id' 
+                    data={ props.users } 
+                    columns={ columns }  
+                    defaultSorted={ defaultSorted }
+                    search
+                >
+                    {
+                        props => (
+                        <div>
+                            <SearchBar { ...props.searchProps } placeholder="Cari..."/>
+                            <hr />
+                            <BootstrapTable
+                            { ...props.baseProps }
+                            />
+                        </div>
+                        )
+                    }
+                    </ToolkitProvider>            
             </Container>
         </div>
     )
