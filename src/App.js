@@ -27,6 +27,97 @@ export default class App extends Component {
         alamat: "Bogor",
         umur: 22,
         no_hp: "088"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
+      },
+      {
+        id: 1,
+        nama: "sukma",
+        alamat: "jakarta",
+        umur: 12,
+        no_hp: "081"
       },            
     ]
   }

@@ -4,6 +4,7 @@ import { Container, Button } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfo, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons'
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
+import paginationFactory from 'react-bootstrap-table2-paginator';
 
 const { SearchBar } = Search;
 const columns = [{
@@ -71,11 +72,12 @@ export const TableComponents = (props) => {
                     {
                         props => (
                         <div>
-                            <SearchBar { ...props.searchProps } placeholder="Cari..."/>
-                            <hr />
-                            <BootstrapTable
-                            { ...props.baseProps }
-                            />
+                            <div className="float-right">
+                                <SearchBar { ...props.searchProps } placeholder="Cari..."/>
+                            </div>
+                            
+                            <BootstrapTable { ...props.baseProps } pagination={ paginationFactory() }
+/>
                         </div>
                         )
                     }
