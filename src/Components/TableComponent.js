@@ -11,27 +11,27 @@ import { connect } from 'react-redux';
 const { SearchBar } = Search;
 
 const columns = [{
-  dataField: 'id',
+  dataField: 'id_mahasiswa',
   text: 'ID', 
   sort: true,
   headerStyle: () => {
       return { width: "5%" };
   },
 }, {
-  dataField: 'nama',
-  text: 'Name',
-  sort: true
-}, {
-  dataField: 'alamat',
-  text: 'Alamat',
-  sort: true
-}, {
-    dataField: 'no_hp',
-    text: 'No_Hp',
+    dataField: 'nim',
+    text: 'NIM',
     sort: true,
     headerStyle: () => {
         return { width: "10%" };
     },
+}, {
+    dataField: 'nama',
+    text: 'Nama Mahasiswa',
+    sort: true,
+}, {
+    dataField: 'jurusan',
+    text: 'Jurusan',
+    sort: true,
 },
 {
    dataField: "Link",

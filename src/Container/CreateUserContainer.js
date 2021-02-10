@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Container } from 'reactstrap'
-import BackComponents from '../Components/BackComponents'
+import BackComponents from '../components/BackComponents'
 
 export default class CreateUserContainer extends Component {
     render() {

@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import JumbotronComponents from './Components/JumbotronComponents'
-import NavbarComponents from './Components/NavbarComponents'
+import JumbotronComponents from './components/JumbotronComponents'
+import NavbarComponents from './components/NavbarComponents'
 import {
   BrowserRouter,
   Route,
 } from "react-router-dom";
-import HomeContainer from './Container/HomeContainer';
-import CreateUserContainer from './Container/CreateUserContainer';
-import EditUserContainer from './Container/EditUserContainer';
-import DetailUserContainer from './Container/DetailUserContainer';
+import HomeContainer from './container/HomeContainer';
+import CreateUserContainer from './container/CreateUserContainer';
+import EditUserContainer from './container/EditUserContainer';
+import DetailUserContainer from './container/DetailUserContainer';
 
 export default class App extends Component {
   
