@@ -1,21 +1,20 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { Container } from 'reactstrap';
 import { getUsersList } from '../action/userAction';
+import { TableComponents } from '../components/TableComponent';
 
-class HomeContainer extends Component {
+class DataContainer extends Component {
     componentDidMount() {
         this.props.dispatch(getUsersList())        
     }
 
     render() {
         return (
-            
-                <Container>
-                    <h1>Selamat Datang</h1>
-                </Container>
+            <div>
+                <TableComponents />
+            </div>
         )
     }
 }
 
-export default connect()(HomeContainer);
+export default connect()(DataContainer);

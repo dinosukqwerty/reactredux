@@ -9,11 +9,11 @@ const JumbotronComponents = (props) => {
       <Container>
         <Jumbotron>
             <h1 className="display-3">{props.title}</h1>
-            <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p className="lead">Selamat Datang </p>
             <hr className="my-2" />
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p></p>
             <p className="lead">
-            <Button color="info"><FontAwesomeIcon icon={faCoffee} />Learn More</Button>
+            <Button color="info"><FontAwesomeIcon icon={faCoffee} /></Button>
             </p>
         </Jumbotron>
       </Container>

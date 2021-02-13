@@ -9,6 +9,9 @@ import HomeContainer from './container/HomeContainer';
 import CreateUserContainer from './container/CreateUserContainer';
 import EditUserContainer from './container/EditUserContainer';
 import DetailUserContainer from './container/DetailUserContainer';
+import DataGitContainer from './container/DataGitContainer';
+import DataContainer from './container/DataContainer';
+import DetailDataGitContainer from './container/DetailDataGitContainer';
 
 export default class App extends Component {
   
@@ -23,6 +26,10 @@ export default class App extends Component {
           <Route path="/create" exact component = {CreateUserContainer} />
           <Route path="/edit/:id" exact component = {EditUserContainer} />
           <Route path="/detail/:id_mahasiswa" exact component = {DetailUserContainer} />
+          <Route path="/detaildatagit/:id" exact component = {DetailDataGitContainer} />
+          <Route path="/datagit" exact component = {DataGitContainer}/>
+          <Route path="/dataappresapi" exact component = {DataContainer}/>
+
         </BrowserRouter>
       </div>
     )

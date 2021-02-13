@@ -11,47 +11,58 @@ import { connect } from 'react-redux';
 const { SearchBar } = Search;
 
 const columns = [{
-  dataField: 'id_mahasiswa',
+  dataField: 'id',
   text: 'ID', 
   sort: true,
   headerStyle: () => {
       return { width: "5%" };
   },
 }, {
-    dataField: 'nim',
-    text: 'NIM',
+    dataField: 'nama',
+    text: 'Nama',
     sort: true,
     headerStyle: () => {
         return { width: "10%" };
     },
 }, {
-    dataField: 'nama',
-    text: 'Nama Mahasiswa',
+    dataField: 'alamat',
+    text: 'Alamat',
     sort: true,
 }, {
-    dataField: 'jurusan',
-    text: 'Jurusan',
+    dataField: 'umur',
+    text: 'Umur',
     sort: true,
+    headerStyle: () => {
+        return { width: "10%"};
+    },
+}, {
+    dataField: 'nohp',
+    text: 'No HP',
+    sort: true,
+    headerStyle: () => {
+        return { width: "15%"};
+    },    
 },
+
 {
    dataField: "Link",
    text: "Action",
    formatter: (rowContent, row) => {
        return (
            <div>
-               <Link to={"detail/"+row.id}>
-                <Button color="dark" className="mr-2">
+               <Link to={"detaildatagit/"+row.id}>
+                <Button color="success" className="mr-2">
                     <FontAwesomeIcon icon={faInfo} /> Detail
                 </Button>
                </Link>
 
                <Link to={"edit/"+row.id}>               
-               <Button color="dark" className="mr-2">
+               <Button color="warning" className="mr-2">
                    <FontAwesomeIcon icon={faEdit}/> Edit
                </Button>
                </Link>
 
-               <Button color="dark" className="mr-2">
+               <Button color="danger" className="mr-2">
                    <FontAwesomeIcon icon={faTrash}/> Delete
                </Button>
            </div>
@@ -67,19 +78,19 @@ const defaultSorted = [{
 
 const mapStateToProps = (state) => {
     return {
-        getUsersList: state.users.getUsersList,
-        errorUsersList: state.users.errorUsersList
+        getDataGitList: state.datagit.getDataGitList,
+        errorDataGitList: state.datagit.errorDataGitList
     }
 }
 
-export const TableComponents = (props) => {
+export const TableGitComponents = (props) => {
     return (
         <div>
             <Container>
-                { props.getUsersList ? 
+                { props.getDataGitList ? 
                 <ToolkitProvider
                     bootstrap4 keyField='id' 
-                    data={ props.getUsersList } 
+                    data={ props.getDataGitList } 
                     columns={ columns }  
                     defaultSorted={ defaultSorted }
                     search
@@ -105,8 +116,8 @@ export const TableComponents = (props) => {
                         )
                     }
                     </ToolkitProvider> : <div className="text-center"> 
-                    load <br/> http://localhost:3001/tampil 
-                    <br/> "https://github.com/dinosukqwerty/apprestapi"  <br/>
+                    load <br/> GIT
+                    <br/> "GIT"  <br/>
                     <Spinner color="primary"/></div>
                     
                     }       
@@ -115,4 +126,4 @@ export const TableComponents = (props) => {
     )
 }
 
-export default connect(mapStateToProps, null)(TableComponents);
+export default connect(mapStateToProps, null)(TableGitComponents);

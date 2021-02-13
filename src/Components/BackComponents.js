@@ -8,7 +8,7 @@ const BackComponents = () => {
     return (
         <Row className="mb-2">
             <Col>
-                <Link to="/">
+                <Link to="/datagit">
                     <Button color="dark">
                         <FontAwesomeIcon icon={faArrowLeft} /> Back
                     </Button>
