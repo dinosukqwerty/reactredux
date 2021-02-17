@@ -32,7 +32,7 @@ const NavbarComponents = (props) => {
               <NavLink href="/dataappresapi" style={{backgroundColor: '#CECCE4'}}>Data API dari appresapi</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/dinosukqwerty" style={{backgroundColor: '#E6F7F1'}}>Repositories github</NavLink>
+              <NavLink href="/repositori" style={{backgroundColor: '#E6F7F1'}}>Repositories github</NavLink>
             </NavItem>
           </Nav>
           <NavbarText>Admin</NavbarText>

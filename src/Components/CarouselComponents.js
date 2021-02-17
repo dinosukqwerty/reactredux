@@ -15,18 +15,18 @@ import tiga from "../img/3.jpg";
 const items = [
   {
     src: satu,
-    altText: '1',
-    caption: 'Caption 1',
+    altText: 'https://github.com/dinosukqwerty/reactredux',
+    caption: 'Project ini : https://github.com/dinosukqwerty/reactredux',
   },
   {
     src: dua,
-    altText: '2',
-    caption: 'Caption 2'
+    altText: 'Data Git',
+    caption: 'API : http://my-json-server.typicode.com/dinosukqwerty/dataapiredux/data/'
   },
   {
     src: tiga,
-    altText: '3',
-    caption: 'Caption 3'
+    altText: 'Data appresapi',
+    caption: 'API: https://github.com/dinosukqwerty/apprestapi'
   },
   ];
 

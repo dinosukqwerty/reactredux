@@ -11,6 +11,7 @@ import DetailUserContainer from './container/DetailUserContainer';
 import DataGitContainer from './container/DataGitContainer';
 import DataContainer from './container/DataContainer';
 import DetailDataGitContainer from './container/DetailDataGitContainer';
+import RepositoriContainer from './container/RepositoriContainer';
 
 export default class App extends Component {
   
@@ -26,6 +27,7 @@ export default class App extends Component {
           <Route path="/detaildatagit/:id" exact component = {DetailDataGitContainer} />
           <Route path="/datagit" exact component = {DataGitContainer}/>
           <Route path="/dataappresapi" exact component = {DataContainer}/>
+          <Route path="/repositori" exact component= {RepositoriContainer}/>
         </BrowserRouter>
       </div>
     )

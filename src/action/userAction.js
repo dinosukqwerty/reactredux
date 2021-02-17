@@ -7,7 +7,6 @@ export const getUsersList = () => {
     return (dispatch) => {
         axios
         .get('http://localhost:3001/tampil')
-        // .get('http://my-json-server.typicode.com/afifbasya/reactjs-redux/users')
         .then(function (response) {
             dispatch({
                 type: GET_USERS_LIST,
@@ -33,7 +32,6 @@ export const getUserDetail = (id) => {
     return (dispatch) => {
         axios
         .get('http://localhost:3001/tampil/'+id)
-        // .get('http://my-json-server.typicode.com/afifbasya/reactjs-redux/users')
         .then(function (response) {
             dispatch({
                 type: GET_USER_DETAIL,
