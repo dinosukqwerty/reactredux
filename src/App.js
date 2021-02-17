@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import JumbotronComponents from './components/JumbotronComponents'
 import NavbarComponents from './components/NavbarComponents'
 import {
   BrowserRouter,
@@ -19,8 +18,6 @@ export default class App extends Component {
     return (
       <div>
         <NavbarComponents />
-        <JumbotronComponents />
-
         <BrowserRouter>
           <Route path="/" exact component = {HomeContainer} />
           <Route path="/create" exact component = {CreateUserContainer} />
@@ -29,7 +26,6 @@ export default class App extends Component {
           <Route path="/detaildatagit/:id" exact component = {DetailDataGitContainer} />
           <Route path="/datagit" exact component = {DataGitContainer}/>
           <Route path="/dataappresapi" exact component = {DataContainer}/>
-
         </BrowserRouter>
       </div>
     )

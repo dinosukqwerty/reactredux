@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { Container } from 'reactstrap';
 import { getUsersList } from '../action/userAction';
+import CarouselComponents from '../components/CarouselComponents';
 
 class HomeContainer extends Component {
     componentDidMount() {
@@ -10,10 +11,11 @@ class HomeContainer extends Component {
 
     render() {
         return (
-            
-                <Container>
-                    <h1>Selamat Datang</h1>
+
+                <Container style={{backgroundColor: "#BED2F8"}}>
+                    <CarouselComponents/>
                 </Container>
+
         )
     }
 }
