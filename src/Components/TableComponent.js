@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 const { SearchBar } = Search;
 
 const columns = [{
-  dataField: 'id_mahasiswa',
+  dataField: 'id',
   text: 'ID', 
   sort: true,
   headerStyle: () => {

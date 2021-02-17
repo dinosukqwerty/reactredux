@@ -29,10 +29,10 @@ export const getUsersList = () => {
     }
 }
 
-export const getUserDetail = (id_mahasiswa) => {
+export const getUserDetail = (id) => {
     return (dispatch) => {
         axios
-        .get('http://localhost:3001/tampil/'+id_mahasiswa)
+        .get('http://localhost:3001/tampil/'+id)
         // .get('http://my-json-server.typicode.com/afifbasya/reactjs-redux/users')
         .then(function (response) {
             dispatch({

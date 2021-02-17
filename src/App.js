@@ -25,7 +25,7 @@ export default class App extends Component {
           <Route path="/" exact component = {HomeContainer} />
           <Route path="/create" exact component = {CreateUserContainer} />
           <Route path="/edit/:id" exact component = {EditUserContainer} />
-          <Route path="/detail/:id_mahasiswa" exact component = {DetailUserContainer} />
+          <Route path="/detail/:id" exact component = {DetailUserContainer} />
           <Route path="/detaildatagit/:id" exact component = {DetailDataGitContainer} />
           <Route path="/datagit" exact component = {DataGitContainer}/>
           <Route path="/dataappresapi" exact component = {DataContainer}/>

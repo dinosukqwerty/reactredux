@@ -12,13 +12,28 @@ const mapStateToProps = (state) => {
 const DetailUserComponents = (props) => {
     return (
         <Table>
-            <tbody>
-                <tr>
-                    <th>{props.getUserDetail.id_mahasiswa}</th>
-                    <th>{props.getUserDetail.nama}</th>
-                    <th>{props.getUserDetail.jurusan}</th>                    
-                </tr>
-            </tbody>
+              <tbody>
+          <tr>
+            <td width="200">ID</td>
+            <td width="10">:</td>
+            <td>{props.getUserDetail.id}</td>  
+          </tr>
+          <tr>
+            <td width="200">NIM</td>
+            <td width="10">:</td>
+            <td>{props.getUserDetail.nim}</td>  
+          </tr>
+          <tr>
+            <td width="200">NAMA</td>
+            <td width="10">:</td>
+            <td>{props.getUserDetail.nama}</td>  
+          </tr>
+          <tr>
+            <td width="200">JURUSAN</td>
+            <td width="10">:</td>
+            <td>{props.getUserDetail.jurusan}</td>  
+          </tr>
+          </tbody>
         </Table>
     )
 }
